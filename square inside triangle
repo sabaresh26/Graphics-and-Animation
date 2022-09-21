@@ -1,0 +1,121 @@
+#include<GL/glu.h>
+#include <GL/glut.h>
+//#include <stdlib.h>
+
+void MyInit()
+{
+   glClearColor(0,1,0,1);
+   glColor3f(0,0,0);
+   
+}
+
+void draw()
+{
+  glClear(GL_COLOR_BUFFER_BIT);
+  glPointSize(10);
+  
+
+ glBegin(GL_LINE_LOOP);
+ glVertex2f(0,0);
+ glVertex2f(-0.75,-0.75);
+ glVertex2f(-0.75,-0.75);
+ 
+ glEnd();
+ glBegin(GL_LINE_LOOP);
+ glVertex2f(-0.50,0.50);
+ glVertex2f(0.50,0.50);
+ glVertex2f(-0.50,-0.50);
+ glVertex2f(-0.50,-0.50);
+ 
+ glEnd();
+
+ glBegin(GL_LINE_L#include<GL/glu.h>
+#include <GL/glut.h>
+//#include <stdlib.h>
+
+void MyInit()
+{
+   glClearColor(0,1,0,1);
+   glColor3f(0,0,0);
+   
+}
+
+void draw()
+{
+  glClear(GL_COLOR_BUFFER_BIT);
+  glPointSize(10);
+  
+
+ glBegin(GL_LINE_LOOP);
+ glVertex2f(0,0);
+ glVertex2f(-0.75,-0.75);
+ glVertex2f(-0.75,-0.75);
+ 
+ glEnd();
+ glBegin(GL_LINE_LOOP);
+ glVertex2f(-0.50,0.50);
+ glVertex2f(0.50,0.50);
+ glVertex2f(-0.50,-0.50);
+ glVertex2f(-0.50,-0.50);
+ 
+ glEnd();
+
+ glBegin(GL_LINE_LOOP);
+ glVertex2f(-0.25,0.25);
+ glVertex2f(0.25,0.25);
+ glVertex2f(-0.25,-0.25);
+ glVertex2f(-0.25,-0.25);
+ 
+ glEnd();
+ 
+ 
+
+ 
+
+  glFlush();
+
+}
+int main(int c, char *v[])
+{
+    glutInit(&c,v);
+    glutInitWindowPosition(300,300);
+    glutInitWindowSize(400,400);
+    glutInitDisplayMode(GLUT_RGB | GLUT_SINGLE);
+    glutCreateWindow("My first window");
+
+    MyInit();
+
+    glutDisplayFunc(draw);
+    glutMainLoop();
+
+    return 0;
+}OOP);
+ glVertex2f(-0.25,0.25);
+ glVertex2f(0.25,0.25);
+ glVertex2f(-0.25,-0.25);
+ glVertex2f(-0.25,-0.25);
+ 
+ glEnd();
+ 
+ 
+
+ 
+
+  glFlush();
+
+}
+int main(int c, char *v[])
+{
+    glutInit(&c,v);
+    glutInitWindowPosition(300,300);
+    glutInitWindowSize(400,400);
+    glutInitDisplayMode(GLUT_RGB | GLUT_SINGLE);
+    glutCreateWindow("My first window");
+
+    MyInit();
+
+    glutDisplayFunc(draw);
+    glutMainLoop();
+
+    return 0;
+}
